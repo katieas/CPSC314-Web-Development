@@ -1,0 +1,39 @@
+/* 
+    Name: Katie Stevens
+    Class: CPSC 314 - Web Development
+    Last Mofified: 11/9/21
+    Homework: HW6 JQuery Stopwatch  
+*/
+
+.wrapper {
+    text-align: center;
+    justify-content: center;
+}
+
+.star {
+    background-image: url("star.jpg");
+}
+
+.timer-background {
+    color: white;
+    background-color: gray;
+    font-size: large;
+}
+
+.running {
+    background-color: rgb(51, 165, 50);
+}
+
+.stopped {
+    background-color: rgb(251, 18, 47);
+}
+
+.button {
+    border-radius: 8px;
+    margin: 0% 4px;
+    padding: 5px 10px;
+    background-color: aliceblue;
+    color: darkblue;
+    box-shadow: 1px 1px 3px; 
+    width: fit-content;
+}

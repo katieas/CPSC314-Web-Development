@@ -1,0 +1,53 @@
+<!-- 
+    Katie Stevens 
+    CPSC 314 - Web Development
+    HW 4
+    10/18/21
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="answer-container" class="answer-container"></div>
+
+    <div class="container">
+        <div class="quiz-title"><h1>Minecraft Quiz</h1></div>
+        
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+        
+        <fieldset class="settings">
+            <legend>Options</legend>
+            <label for="shuffle">Shuffle Cards:</label>
+            <input type="checkbox" id="shuffle" checked>
+            <br>
+            <label for="timed">Timed Session:</label>
+            <input type="checkbox" id="timed">
+            <br>
+            <label for="remove-correct">Remove Correct from Deck:</label>
+            <input type="checkbox" id="remove-correct">
+        </fieldset>
+
+        <div class="controls">
+            <button id="back-btn" class="back-btn btn hide">Back</button>
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>   
+        </div>
+
+        <div class="info-container"> 
+            <div id="timer" class="hide"></div>
+            <div id="question-counter"></div>
+        </div>
+    </div>
+</body>
+</html>

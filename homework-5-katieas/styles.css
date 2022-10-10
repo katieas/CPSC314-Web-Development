@@ -1,0 +1,59 @@
+/*
+Name: Katie Stevens
+Class: CPSC 314 Web Development Fall 2021
+Assignment: HW5
+Last Modified: 10/29/21 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    background: #E1F7C8;
+    display: block;
+    margin: 0 auto;
+}
+
+.settings {
+    align-self: center;
+    width: 480px;
+    font-size: 15px;
+    border: red dashed;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.full {
+    flex: 100%;
+}
+
+.continue-btn, .newGame-btn {
+    flex: 45%;
+}
+
+#speedmult-label {
+    margin-left: 2%;
+}
+
+#speedmult {
+    width: 70%;
+    margin-left: 2%;
+}

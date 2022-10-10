@@ -1,0 +1,41 @@
+<!--
+    Katie Stevens
+    CPSC 314 Web Development
+    HW 1
+    9/15/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1 {
+            background-color: green;
+            color: white;
+        }
+    </style>
+
+    <head>
+        <title>Katie Stevens CPSC 314 Web Development</title>
+    </head>
+
+    <body>
+        <h1 id="Colorable">HW1</h1>
+        <p>I am excited to <em>learn something new</em>. I believe being able to design a website is
+            a useful skill to have. I hope that I have the ability to <strong><em>create my own website</em></strong> 
+            by the end of this course.
+        </p>
+
+        <img src="cat.jpg" alt="cat">
+        <a href="https://www.google.com/search?q=funny+cat&sxsrf=AOaemvIbEhyK4B-m1OTLOdINS0X5hmwmqA:1631422675072&tbm=isch&source=iu&ictx=1&fir=LWtv8rFdQ8CxBM%252CLyXHOms6bprsvM%252C_&vet=1&usg=AI4_-kQpFEN9r19S5UGfEvnvP6pJSFirtw&sa=X&ved=2ahUKEwizmJqI0_jyAhVmHjQIHcRbAQcQ9QF6BAgMEAE&biw=854&bih=815&dpr=2.25#imgrc=LWtv8rFdQ8CxBM">Funny Meme</a>
+        <br><br>
+
+        <button onclick="buttonStuff()">Don't Click Me</button>
+
+        <script>
+            function buttonStuff() {
+                document.getElementById("Colorable").style["color"] = 'black';
+                document.getElementById("Colorable").style["background-color"] = 'lightgray';
+            }
+        </script>
+    </body>
+</html>

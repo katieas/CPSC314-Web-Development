@@ -1,0 +1,38 @@
+<!--
+    HW5 Starter Code
+    Modified from https://github.com/end3r/Gamedev-Canvas-workshop
+
+    Name: Katie Stevens
+    Class: CPSC 314 Web Development Fall 2021
+    Assignment: HW5
+    Last Modified: 10/29/21
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout Game! HW5 JavaScript 2</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+    <fieldset class="settings">
+        <legend>Options</legend>
+        <button id="pause-btn" class="pause-btn btn full">Toggle Pause Game</button>
+        
+        <div class="full">
+        <label for="speedmult" id="speedmult-label">Game Speed: 1.00</label>
+        <input type="range" id="speedmult" min="0.5" max="4" step="0.05" value="1">
+        </div>
+        
+        <button id="newGame-btn" class="newGame-btn btn">New Game (Reset)</button>
+        <button id="continue-btn" class="continue-btn btn">Continue Playing</button>
+        
+        <button id="reload-btn" class="reload-btn btn full">Reload Window</button>
+    </fieldset>
+</body>
+
+</html>

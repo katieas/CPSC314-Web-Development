@@ -1,0 +1,217 @@
+<!--
+    Katie Stevens
+    CPSC 314 Web Development
+    HW 3
+    10/6/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3 - CV Page</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+
+    <style>
+        #grid-container {
+            display: grid;
+            grid-template-columns: 20% auto;
+            grid-template-rows: 200px 200px auto;
+        }
+
+        #nav {
+            text-align: center;
+            background-color: lightgray;
+            padding-top: 30px; 
+            height: 100px;
+        }
+
+        #logoimage {
+            border-radius: 40%;
+            margin-left: 5%;
+            height: 80%;
+            float: left;
+        }
+
+        #profile {
+            background-color: lavender;
+        }
+
+        #profile-image {
+            filter: grayscale(100%);
+            height: 200px;;
+            padding-left: 5%;
+        }
+
+        #summary {
+            background-color: lavender;
+            grid-row: 2 / 5;
+            padding-left: 5%;
+        }
+
+        #content {
+            background-color: ivory;
+            grid-row: 1 / 5;
+            padding-left: 5%;
+        }
+
+        table,
+        th {
+            border: 1px solid black;
+            background-color: mistyrose;
+        }
+
+        td {
+            border: 1px dotted black;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        ul {
+            list-style: circle;
+        }
+
+        ol {
+            list-style: upper-roman;
+        }
+
+        #horse {
+            filter: contrast(20);
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <img src="OMG.jpg" alt="LOGO" id="logoimage"> 
+        <h2>
+        <a href="#core-skills">Introduction Page</a>
+        &emsp;
+        <a href="#career">Career Page</a>
+        &emsp;
+        <a href="#education">Education and Qualifications</a>
+        &emsp;
+        <a href="#hobbies">Intrests and Hobbies</a>
+        </h2>
+    </nav>
+
+    <div id="grid-container">
+        <div id="profile">
+            <img src="katie.jpg" alt="Profile Picture" id="profile-image">
+        </div>
+
+        <section id="summary">
+            <div>
+                <h3>Summary</h3>
+                <p>My name is Katie Stevens and I am studying Computer Science at Gonzaga University. I have experience
+                    in programming and I play a lot of Rockband in my free time. 
+                </p>
+            </div>
+        </section>
+        
+        <section id="content">
+        <h1><u>Katie Stevens</u></h1>
+            <section id="core-skills">
+                <h2>Core Skills:</h2>
+                <ul>
+                    <li>Programming</li>
+                    <li>Juggling</li>
+                    <li>Fishing</li>
+                    <li>Rockband</li>
+                    <li>Deep Ocean Diving</li>
+                    <li>Parallel Parking</li>
+                    <li>Dying Hair</li>
+                </ul>
+            </section>
+
+            <br><br>
+
+            <section id="career">
+            <h2>Career Summary</h2>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Job Title</th>
+                        <th>Job Description</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>Lappert's Hawaii</td>
+                        <td>Aloha Crew Member</td>
+                        <td>Serving icecream, sundaes, and coffee drinks to customers.</td>
+                        <td>January 2019 - May 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Ululani's Shave Ice</td>
+                        <td>Shavista</td>
+                        <td>Like a barista but shave ice edition</td>
+                        <td>June 2019 - September 2019</td>
+                    </tr>
+                </table>
+            </section>
+
+            <br><br>
+
+            <section id="education">
+            <h2>Education and Qualifications</h2>
+            <h3>Education</h3>
+            <table>
+                <tr>
+                    <th>Name of School</th>
+                    <th>Address</th>
+                    <th>Attended</th>
+                    <th>Degree Accquired</th>
+                </tr>
+                <tr>
+                    <td>Gonzaga University</td>
+                    <td>502 E. Boone Avenue<br> Spokane, WA 99258</td>
+                    <td>Expected Graduation: 2023</td>
+                    <td>Bachelor's in Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Maui High School</td>
+                    <td>660 S. Lono Avenue<br> Kahului, HI 96753</td>
+                    <td>August 2015-May 2019</td>
+                    <td>High School Diploma</td>
+                </tr>
+            </table>
+
+            <br>
+        
+            <h3>Qualifications</h3>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Programming</td>
+                    <td>Lanugages: Java, C/C++, Python, HTML, Assembly</td>
+                </tr>
+                <tr>
+                    <td>Rockband</td>
+                    <td>Instruments: Guitar, Bass, Vocals</td>
+                </tr>
+            </table>
+            </section>
+
+            <br><br>
+
+            <section id="hobbies">
+            <h2>Interests and Hobbies</h2>
+            <h3>Here are some of the things I enjoy to do during my free time:</h3>
+            <ol>
+                <li>Violin<div><img src="violin.jpg" alt="Violin" width=300></div></li>
+                <li>Trumpet<div><img src="trumpet.jpg" alt="Trumpet playing" width=300></div></li>
+                <li>Video Games<div><img src="videogame.jpg" alt="Minecraft Video Game" width=300></div></li>
+                <li>Horseback Riding<a href="https://en.wikipedia.org/wiki/Horse">
+                <div><img src="horse.jpg" alt="Link to Horse Wikipedia site using an image of a horse." id="horse" width=300 height=200></div></a></li>
+            </ol>
+        </section>
+    </section>
+    </div>
+</body>
+</html>
